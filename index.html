@@ -10,31 +10,32 @@
     
     <main>
         <header id="header">
-            <div class="player" id="xPlayerDisplay">
+            <div class="player player-active" id="xPlayerDisplay" onclick="choosePlayer('X')">
                 X
             </div>
             <h3 id="titleHeader">Choose</h3>
-            <div class="player" id="oPlayerDisplay">
+            <div class="player" id="oPlayerDisplay" onclick="choosePlayer('O')">
                 O
             </div>
         </header>
+
+        <div id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <button id="restartBtn">
+            Restart
+        </button>
     </main>
 
-    <div id="board">
-        <div class="cell">0</div>
-        <div class="cell">1</div>
-        <div class="cell">2</div>
-        <div class="cell">3</div>
-        <div class="cell">4</div>
-        <div class="cell">5</div>
-        <div class="cell">6</div>
-        <div class="cell">7</div>
-        <div class="cell">8</div>
-    </div>
-
-    <button id="restartBtn">
-        Restart
-    </button>
-
+    <script src="script.js"></script>
 </body>
 </html>
